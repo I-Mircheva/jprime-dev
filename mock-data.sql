@@ -1,1 +1,0 @@
-INSERT INTO venuehall (NAME, DESCRIPTION) VALUES ('Hall A', 'Big hall');

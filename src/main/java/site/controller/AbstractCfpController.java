@@ -32,7 +32,7 @@ public class AbstractCfpController {
 
     @Autowired(required = false)
     @Qualifier(MailService.NAME)
-    @Lazy
+//    @Lazy
     protected MailService mailFacade;
 
     @Autowired
