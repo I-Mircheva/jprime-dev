@@ -70,12 +70,14 @@
                             </p>
                         </div>
                     </div>
-                    <div>
-                        <c:forEach items="${speaker.videos.split(' ')}" var="video">
-                            <iframe style = "margin-bottom: 1% " width="50" height="50" src="${video}"
-                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                            </iframe>
-                        </c:forEach>
+                     <div>
+                    	<c:forEach items="${speaker.videos.split(' ')}" var="video">
+                    		<div style= "width: 50%; height:50%; margin-left: 30%; margin-top: 2%">
+                            	<iframe  align = "centered"src="${video}"
+                          		          frameborder="1" allow="autoplay; encrypted-media" allowfullscreen>
+                        	  	</iframe>
+                    	    </div>
+                  	  </c:forEach>
                     </div>
                     <!-- End Single Post Area -->
                     <!-- currently not needed!!
