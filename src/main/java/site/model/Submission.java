@@ -30,7 +30,7 @@ public class Submission extends AbstractEntity {
     private String description;
 
     @Enumerated(EnumType.STRING)
-    private SubmissionStatus status = SubmissionStatus.ACCEPTED;
+    private SubmissionStatus status = SubmissionStatus.SUBMITTED;
 
     @Enumerated(EnumType.STRING)
     private SessionLevel level;

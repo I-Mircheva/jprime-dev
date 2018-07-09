@@ -15,6 +15,7 @@ import site.config.Globals;
 import site.facade.MailService;
 import site.facade.ThumbnailService;
 import site.facade.UserService;
+import site.facade.VideoSanitizerService;
 import site.model.Branch;
 import site.model.SessionLevel;
 import site.model.Speaker;
@@ -25,6 +26,8 @@ import site.model.SessionType;
  * @author Ivan St. Ivanov
  */
 public class AbstractCfpController {
+	
+	private VideoSanitizerService videoSanitizerService = new VideoSanitizerService();
 	
     @Autowired
     @Qualifier(UserService.NAME)
@@ -75,6 +78,9 @@ public class AbstractCfpController {
             fixTwitterHandle(speaker);
             speaker.setBranch(Globals.CURRENT_BRANCH);
             formatPicture(speaker, image);
+            if(speaker.getVideos() != null) {
+            	speaker.setVideos(videoSanitizerService.formatString(speaker.getVideos()));
+        	}
             return speaker;
         }
     }

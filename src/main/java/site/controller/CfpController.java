@@ -3,6 +3,7 @@ package site.controller;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.validator.internal.constraintvalidators.bv.EmailValidator;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -14,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import site.config.Globals;
 import site.facade.MailService;
+import site.facade.VideoSanitizerService;
+import site.model.Speaker;
 import site.model.Submission;
 
 import javax.servlet.http.HttpServletRequest;
@@ -33,6 +36,7 @@ public class CfpController extends AbstractCfpController {
 	public static final String JPRIME_CONF_MAIL_ADDRESS = "conference@jprime.io";
     public static final String CFP_OPEN_JSP = "/proposal.jsp";
     public static final String CFP_CLOSED_JSP = "/cfp-closed.jsp";
+    
 
 
     @RequestMapping(value = "/cfp", method = RequestMethod.GET)
@@ -118,4 +122,7 @@ public class CfpController extends AbstractCfpController {
         return Globals.PAGE_CFP;
     }
 
+    private boolean hasVideo(Speaker speaker) {
+    	return speaker.getVideos() != null;
+    }
 }

@@ -11,7 +11,10 @@ import javax.persistence.InheritanceType;
 import javax.persistence.Lob;
 import javax.persistence.OneToMany;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import site.config.Globals;
+import site.facade.VideoSanitizerService;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -23,6 +26,7 @@ public class Speaker extends User {
     /**
      *
      */
+	
     private static final long serialVersionUID = 1L;
 
     @Column(length = 1024)
@@ -30,7 +34,7 @@ public class Speaker extends User {
 
     private String headline;
 
-    private String twitter;
+    private String twitter;	
 
     private Boolean featured = false;
 
@@ -58,6 +62,17 @@ public class Speaker extends User {
         this.twitter = twitter;
         this.featured = featured;
         this.accepted = accepted;
+    }
+    
+    public Speaker(String firstName, String lastName, String email, String headline, String twitter, boolean featured, boolean accepted, String videos) {
+        setFirstName(firstName);
+        setLastName(lastName);
+        setEmail(email);
+        this.headline = headline;
+        this.twitter = twitter;
+        this.featured = featured;
+        this.accepted = accepted;
+        setVideos(videos);
     }
 
     public byte[] getPicture() {
