@@ -190,13 +190,11 @@ public class SubmissionControllerTest {
     
     @Test
     public void videosTest() {
-        Speaker brianGoetz = new Speaker("Brian", "Goetz", "brian@oracle.com", "The Java Language Architect", "@briangoetz", true, true, 
-        		"youtube.com,youtube.com;someurl.com\nsomeurl.com\tanotherurl.com");
-
+    	Speaker brianGoetz = new Speaker("Brian", "Goetz", "brian@oracle.com", "The Java Language Architect", "@briangoetz", true, true, 
+          		"youtube.com,youtube.com;someurl.com\nsomeurl.com\tanotherurl.com");
         brianGoetz.setVideos(videoSanitizerService.formatString(brianGoetz.getVideos()));
     	assertFalse(brianGoetz.getVideos().contains(","));
     	assertFalse(brianGoetz.getVideos().contains(";"));
-    	assertFalse(brianGoetz.getVideos().contains(","));
     	assertFalse(brianGoetz.getVideos().contains("\n"));
     	assertFalse(brianGoetz.getVideos().contains("\t"));
     	
