@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 public class VideoSanitizerService {
 	
 	public String formatString(String video) {
-		return video.replace("\n", " ").replace("\t", " ").replace(","," ").replace(";", " ");
+		return video.replace("\n", " ").replace("\t", " ").replace(","," ").replace(";", " ").replaceAll(" +", " ");
 	}
 }

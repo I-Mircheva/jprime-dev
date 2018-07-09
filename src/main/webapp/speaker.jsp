@@ -73,7 +73,7 @@
                      <div>
                     	<c:forEach items="${speaker.videos.split(' ')}" var="video">
                     		<div style= "width: 50%; height:50%; margin-left: 30%; margin-top: 2%">
-                            	<iframe  align = "centered"src="${video}"
+                            	<iframe  align = "centered" src="${video}"
                           		          frameborder="1" allow="autoplay; encrypted-media" allowfullscreen>
                         	  	</iframe>
                     	    </div>
