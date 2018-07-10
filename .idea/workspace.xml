@@ -1,110 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95d9750d-5101-4d18-a25d-af91031d9e63" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/migrate-add-videos.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mock-data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/site/controller/AbstractCfpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/controller/AbstractCfpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/speaker.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/speaker.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/app/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/app/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/app/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/app/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/app/SecurityConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/app/SecurityConfig$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/app/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/app/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/config/Globals.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/config/Globals.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/AbstractCfpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/AbstractCfpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/AdminArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/AdminArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/AdminInvoiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/AdminInvoiceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/AdminRegistrantController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/AdminRegistrantController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/AdminSessionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/AdminSessionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/AdminSpeakerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/AdminSpeakerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/AdminTagController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/AdminTagController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/AdminVenueHallController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/AdminVenueHallController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/AdminVisitorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/AdminVisitorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/AgendaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/AgendaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/CaptchaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/CaptchaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/CfpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/CfpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/CustomErrorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/CustomErrorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/ImageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/ImageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/NavController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/NavController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/PartnerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/PartnerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/RaffleController$RaffleVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/RaffleController$RaffleVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/RaffleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/RaffleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/SpeakerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/SpeakerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/SponsorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/SponsorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/SubmissionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/SubmissionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/TicketsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/TicketsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/epay/EpayRaw.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/epay/EpayRaw.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/epay/EpayResponse$Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/epay/EpayResponse$Status.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/epay/EpayResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/epay/EpayResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/epay/EpayUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/epay/EpayUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/invoice/InvoiceData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/invoice/InvoiceData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/controller/invoice/InvoiceExporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/controller/invoice/InvoiceExporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/facade/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/facade/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/facade/CSVService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/facade/CSVService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/facade/MailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/facade/MailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/facade/RegistrantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/facade/RegistrantService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/facade/ResetPasswordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/facade/ResetPasswordService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/facade/ThumbnailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/facade/ThumbnailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/facade/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/facade/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/AbstractEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/AbstractEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Branch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/JprimeException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/JprimeException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Partner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Partner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/PartnerPackage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/PartnerPackage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/PaymentTypeEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/PaymentTypeEditor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Registrant$EpayInvoiceNumberGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Registrant$EpayInvoiceNumberGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Registrant$PaymentType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Registrant$PaymentType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Registrant$ProformaInvoiceNumberGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Registrant$ProformaInvoiceNumberGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Registrant$RealInvoiceNumberGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Registrant$RealInvoiceNumberGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Registrant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Registrant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/ResetPasswordToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/ResetPasswordToken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Session.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/SessionLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/SessionLevel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/SessionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/SessionType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Speaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Speaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Sponsor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Sponsor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/SponsorPackage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/SponsorPackage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Submission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Submission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/SubmissionStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/SubmissionStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Tag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/VenueHall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/VenueHall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/Visitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/Visitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/model/VisitorStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/model/VisitorStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/ArticleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/ArticleRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/PartnerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/PartnerRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/RegistrantEpayInvoiceNumberGeneratorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/RegistrantEpayInvoiceNumberGeneratorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/RegistrantProformaInvoiceNumberGeneratorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/RegistrantProformaInvoiceNumberGeneratorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/RegistrantRealInvoiceNumberGeneratorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/RegistrantRealInvoiceNumberGeneratorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/RegistrantRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/RegistrantRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/ResetPasswordTokenRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/ResetPasswordTokenRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/SessionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/SessionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/SpeakerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/SpeakerRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/SponsorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/SponsorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/SubmissionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/SubmissionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/TagRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/TagRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/VenueHallRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/VenueHallRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/repository/VisitorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/repository/VisitorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/site/controller/CfpControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/site/controller/CfpControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/site/controller/CommonCfpControllerTest$TestCfpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/site/controller/CommonCfpControllerTest$TestCfpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/site/controller/CommonCfpControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/site/controller/CommonCfpControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/site/controller/IndexControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/site/controller/IndexControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/site/controller/MailServiceMock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/site/controller/MailServiceMock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/site/controller/RegistrantControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/site/controller/RegistrantControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/site/controller/ResetPasswordTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/site/controller/ResetPasswordTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/site/controller/SessionControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/site/controller/SessionControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/site/controller/SubmissionControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/site/controller/SubmissionControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/site/controller/TicketsControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/site/controller/TicketsControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/site/controller/TicketsEpayRegisterControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/site/controller/TicketsEpayRegisterControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/site/controller/VenueHallControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/site/controller/VenueHallControllerTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="95d9750d-5101-4d18-a25d-af91031d9e63" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -115,24 +12,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="speaker.tag" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/user/speaker.tag">
+      <file leaf-file-name="SubmissionControllerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/site/controller/SubmissionControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+            <state relative-caret-position="236">
+              <caret line="202" column="19" lean-forward="true" selection-start-line="202" selection-start-column="19" selection-end-line="202" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="speaker.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/speaker.jsp">
+      <file leaf-file-name="VideoSanitizerService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/site/facade/VideoSanitizerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="74" column="65" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoSanitizerServiceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/site/controller/VideoSanitizerServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -181,7 +83,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,47 +121,37 @@
               <item name="jprime-dev" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="facade" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="jprime-dev" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="jprime-dev" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="site" type="b2602c69:ProjectViewProjectNode" />
               <item name="jprime-dev" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="tags" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jprime-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="tags" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -369,7 +260,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5215000" />
+    <option name="totallyTimeSpent" value="5233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
@@ -393,21 +284,82 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36146498" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4156051" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22181553" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21083455" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32961783" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36146498" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22181553" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32961783" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32961783" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Designer" order="2" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.25796178" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info id="Image Layers" order="1" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32961783" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.2035139" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="right" id="Bean Validation" order="6" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -416,6 +368,160 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/migrate.sql.queries.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/site/app/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circle.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="29" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/site/app/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="173" column="1" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/site/controller/AdminSpeakerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="87" column="18" lean-forward="true" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/site/controller/AbstractCfpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/site/controller/SubmissionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="150" column="15" lean-forward="true" selection-start-line="150" selection-start-column="15" selection-end-line="150" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/site/facade/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding>
+            <element signature="e#3190#3191#0" expanded="true" />
+            <element signature="e#3249#3250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/site/controller/SpeakerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/site/repository/SpeakerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/404.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/user/speaker.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mock-data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="178" lean-forward="true" selection-start-line="11" selection-start-column="178" selection-end-line="11" selection-end-column="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/speaker.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="74" column="65" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/site/model/Submission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/site/model/Speaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/site/controller/VideoSanitizerServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/site/controller/SubmissionControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="202" column="19" lean-forward="true" selection-start-line="202" selection-start-column="19" selection-end-line="202" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/site/facade/VideoSanitizerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/site/app/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
