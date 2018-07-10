@@ -6,7 +6,6 @@ import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
@@ -18,16 +17,17 @@ import site.facade.UserService;
 import site.facade.VideoSanitizerService;
 import site.model.Branch;
 import site.model.SessionLevel;
+import site.model.SessionType;
 import site.model.Speaker;
 import site.model.Submission;
-import site.model.SessionType;
 
 /**
  * @author Ivan St. Ivanov
  */
 public class AbstractCfpController {
 	
-	private VideoSanitizerService videoSanitizerService = new VideoSanitizerService();
+	@Autowired
+	private VideoSanitizerService videoSanitizerService;
 	
     @Autowired
     @Qualifier(UserService.NAME)

@@ -1,8 +1,11 @@
 package site.facade;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+
 import site.model.JprimeException;
 import site.model.Registrant;
 import site.model.Visitor;
@@ -11,8 +14,6 @@ import site.repository.RegistrantEpayInvoiceNumberGeneratorRepository;
 import site.repository.RegistrantProformaInvoiceNumberGeneratorRepository;
 import site.repository.RegistrantRealInvoiceNumberGeneratorRepository;
 import site.repository.RegistrantRepository;
-
-import javax.transaction.Transactional;
 
 @Service(RegistrantService.NAME)
 @Transactional

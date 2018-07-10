@@ -1,5 +1,7 @@
 package site.controller;
 
+import javax.transaction.Transactional;
+
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -10,11 +12,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
 import site.config.Globals;
 import site.facade.AdminService;
 import site.model.Session;
-
-import javax.transaction.Transactional;
 
 /**
  * @author Ivan St. Ivanov

@@ -1,11 +1,11 @@
 package site.controller.invoice;
 
-import site.model.Registrant;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+
+import site.model.Registrant;
 
 /**
  * DTO for the PDF

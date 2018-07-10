@@ -1,5 +1,8 @@
 package site.controller;
 
+import javax.transaction.Transactional;
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Lazy;
@@ -9,14 +12,12 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
 import site.controller.invoice.InvoiceData;
 import site.controller.invoice.InvoiceExporter;
 import site.facade.MailService;
 import site.facade.RegistrantService;
 import site.model.Registrant;
-
-import javax.transaction.Transactional;
-import javax.validation.Valid;
 
 /**
  * @author Ivan St. Ivanov

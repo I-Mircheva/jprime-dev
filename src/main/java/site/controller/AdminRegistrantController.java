@@ -1,5 +1,7 @@
 package site.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -14,8 +16,6 @@ import site.model.Branch;
 import site.model.Registrant;
 import site.model.Visitor;
 import site.model.VisitorStatus;
-
-import javax.validation.Valid;
 
 /**
  * @author Ivan St. Ivanov

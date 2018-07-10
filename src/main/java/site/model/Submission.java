@@ -1,7 +1,5 @@
 package site.model;
 
-import site.config.Globals;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,6 +12,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Transient;
 import javax.validation.constraints.NotBlank;
+
+import site.config.Globals;
 
 /**
  * @author Ivan St. Ivanov

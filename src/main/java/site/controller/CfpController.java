@@ -1,9 +1,16 @@
 package site.controller;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.validator.internal.constraintvalidators.bv.EmailValidator;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -13,18 +20,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+
 import site.config.Globals;
-import site.facade.MailService;
-import site.facade.VideoSanitizerService;
 import site.model.Speaker;
 import site.model.Submission;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 /**
  * @author Ivan St. Ivanov
@@ -122,7 +121,4 @@ public class CfpController extends AbstractCfpController {
         return Globals.PAGE_CFP;
     }
 
-    private boolean hasVideo(Speaker speaker) {
-    	return speaker.getVideos() != null;
-    }
 }

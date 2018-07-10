@@ -6,7 +6,6 @@ import javax.persistence.Enumerated;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.Lob;
-import java.util.Objects;
 
 @Entity
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)

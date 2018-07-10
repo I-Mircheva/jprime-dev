@@ -1,10 +1,17 @@
 package site.model;
 
+import java.util.Objects;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+
 import org.hibernate.annotations.Type;
 import org.joda.time.DateTime;
-
-import javax.persistence.*;
-import java.util.Objects;
 
 @Entity
 public class Session extends AbstractEntity {

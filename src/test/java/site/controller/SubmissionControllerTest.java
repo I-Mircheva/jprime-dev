@@ -1,32 +1,5 @@
 package site.controller;
 
-import org.junit.Before;
-import org.junit.Assert.*;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.context.WebApplicationContext;
-import site.app.Application;
-import site.config.Globals;
-import site.facade.CSVService;
-import site.facade.VideoSanitizerService;
-import site.model.Branch;
-import site.model.SessionLevel;
-import site.model.SessionType;
-import site.model.Speaker;
-import site.model.Submission;
-import site.model.SubmissionStatus;
-import site.repository.SubmissionRepository;
-
-import java.io.File;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.core.Is.is;
@@ -40,6 +13,33 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static site.controller.SubmissionController.ADMIN_SUBMISSION_EDIT_JSP;
 import static site.controller.SubmissionController.ADMIN_SUBMISSION_VIEW_JSP;
 
+import java.io.File;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.context.WebApplicationContext;
+
+import site.app.Application;
+import site.config.Globals;
+import site.facade.CSVService;
+import site.facade.VideoSanitizerService;
+import site.model.Branch;
+import site.model.SessionLevel;
+import site.model.SessionType;
+import site.model.Speaker;
+import site.model.Submission;
+import site.model.SubmissionStatus;
+import site.repository.SubmissionRepository;
+
 /**
  * @author Ivan St. Ivanov
  */
@@ -49,7 +49,8 @@ import static site.controller.SubmissionController.ADMIN_SUBMISSION_VIEW_JSP;
 @Transactional
 public class SubmissionControllerTest {
 
-	private VideoSanitizerService videoSanitizerService = new VideoSanitizerService();
+	@Autowired
+	private VideoSanitizerService videoSanitizerService;
 	
     @Autowired
     private WebApplicationContext wac;

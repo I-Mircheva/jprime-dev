@@ -1,10 +1,11 @@
 package site.controller.epay;
 
+import java.util.Date;
+
 import javax.persistence.Embeddable;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Transient;
-import java.util.Date;
 
 /**
  * What epay sends us on the back channel.

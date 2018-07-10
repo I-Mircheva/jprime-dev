@@ -1,12 +1,13 @@
 package site.repository;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
+
 import site.model.User;
 import site.model.Visitor;
-
-import java.util.List;
 
 /**
  * Created by mitia on 28.04.15.

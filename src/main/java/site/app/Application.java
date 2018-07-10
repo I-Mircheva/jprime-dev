@@ -1,24 +1,9 @@
 package site.app;
 
-import com.zaxxer.hikari.HikariConfig;
-import com.zaxxer.hikari.HikariDataSource;
+import java.util.Properties;
 
-import site.model.Session;
-import site.model.Speaker;
-import site.model.Sponsor;
-import site.model.User;
-import site.model.VenueHall;
-import site.repository.SessionRepository;
-import site.repository.SpeakerRepository;
-import site.repository.SponsorRepository;
-import site.repository.SubmissionRepository;
-import site.repository.VenueHallRepository;
+import javax.sql.DataSource;
 
-import site.model.SessionType;
-import site.model.SubmissionStatus;
-import org.joda.time.DateTime;
-import org.joda.time.Duration;
-import site.model.SessionLevel;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -35,13 +20,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.data.web.config.EnableSpringDataWebSupport;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import site.model.SponsorPackage;
-import site.model.Submission;
 
-import javax.sql.DataSource;
-
-import java.util.Arrays;
-import java.util.Properties;
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
 
 /**
  * to make this deployable as war, this is necessary:
