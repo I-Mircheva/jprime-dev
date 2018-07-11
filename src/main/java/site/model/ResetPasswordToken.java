@@ -36,22 +36,11 @@ public class ResetPasswordToken extends AbstractToken {
 		return used;
 	}
 
-	public ResetPasswordToken(User owner, String tokenId) {
-		super(owner, tokenId);
-	}
-
 	@Override
 	public String toString() {
 		return "ResetPasswordToken [owner=" + this.getOwner() + ", tokenId=" + this.getTokenId() + ", used=" + used + "]";
 	}
 
-	public boolean isUsed() {
-		return used;
-	}
-
-	public void setUsed(boolean used) {
-		this.used = used;
-	}
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
