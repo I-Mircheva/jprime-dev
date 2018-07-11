@@ -4,6 +4,12 @@ package site.model;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+
+
+/**
+ * @author Zhorzh Raychev
+ */
+
 @Entity
 @Table(name = "ResetPasswordToken")
 public class ResetPasswordToken extends AbstractToken {
@@ -30,7 +36,6 @@ public class ResetPasswordToken extends AbstractToken {
 	public void setUsed(boolean used) {
 		this.used = used;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -54,6 +59,8 @@ public class ResetPasswordToken extends AbstractToken {
 			return false;
 		return true;
 	}
+
+
 
 	@Override
 	public int hashCode() {

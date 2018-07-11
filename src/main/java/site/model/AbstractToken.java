@@ -39,6 +39,4 @@ public abstract class AbstractToken extends AbstractEntity {
         this.tokenId = tokenId;
     }
 
-
-
 }

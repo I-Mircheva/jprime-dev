@@ -1,8 +1,5 @@
 package site.facade;
 
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.SecureRandom;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -21,7 +18,7 @@ import site.repository.ResetPasswordTokenRepository;
  * @author Zhorzh Raychev
  */
 @Service()
-public class ResetPasswordService {
+public class ResetPasswordService extends AbstractTokenService{
 
 	@Value("${site.reset.password.token.duration.hours:2}")
 	private int TOKEN_DURATION_IN_HOURS;
@@ -29,17 +26,9 @@ public class ResetPasswordService {
 	private static final Logger logger = LogManager.getLogger(ResetPasswordService.class);
 
 	@Autowired
-	private ResetPasswordTokenRepository resetPassRepository;
+	private ResetPasswordTokenRepository repository;
 
-	public String createNewToken(User user) {
-		String tokenId = getNewTokenId();
-		ResetPasswordToken resetPassToken = new ResetPasswordToken(user, tokenId);
-		String tokenShaHex = Sha512DigestUtils.shaHex(resetPassToken.getTokenId());
-		resetPassToken.setTokenId(tokenShaHex);
-		resetPassRepository.save(resetPassToken);
 
-		return tokenId;
-	}
 
 	/**
 	 * @param tokenId
@@ -49,7 +38,7 @@ public class ResetPasswordService {
 	public User checkTokenValidity(String tokenId) {
 
 		String tokenShaHex = Sha512DigestUtils.shaHex(tokenId);
-		ResetPasswordToken resetPasswordToken = resetPassRepository.findByTokenId(tokenShaHex);
+		ResetPasswordToken resetPasswordToken = repository.findByTokenId(tokenShaHex);
 		if (resetPasswordToken == null) {
 			logger.debug("ResetPasswordToken id=" + tokenId + " , ShaHex: " + tokenShaHex
 					+ " NOT found. This could be an attacker brute forcing the token!");
@@ -75,37 +64,28 @@ public class ResetPasswordService {
 	public void setTokenToUsed(String tokenId) {
 
 		String tokenShaHex = Sha512DigestUtils.shaHex(tokenId);
-		ResetPasswordToken resetPasswordToken = resetPassRepository.findByTokenId(tokenShaHex);
+		ResetPasswordToken resetPasswordToken = repository.findByTokenId(tokenShaHex);
 		User owner = resetPasswordToken.getOwner();
-		List<ResetPasswordToken> tokens = resetPassRepository.findAllByOwner(owner);
+		List<ResetPasswordToken> tokens = repository.findAllByOwner(owner);
 		for (ResetPasswordToken token : tokens) {
 			token.setUsed(true);
 		}
-		resetPassRepository.saveAll(tokens);
+		repository.saveAll(tokens);
 	}
 
-	private String getNewTokenId() {
-		SecureRandom random = getRandom();
-		char[] chars = "abbbcdefghhiiijklmmnopqrstuuvwxyzz1234567899990".toCharArray();
-		StringBuilder sb = new StringBuilder();
-		for (int i = 0; i < 128; i++) {
-			char c = chars[random.nextInt(chars.length)];
-			sb.append(c);
-		}
-		String output = sb.toString();
-		return output;
+	@Override
+	public  String createNewToken(User user) {
+		String tokenId = getNewTokenId();
+		ResetPasswordToken token = new ResetPasswordToken(user, tokenId);
+		token.setOwner(user);
+		token.setTokenId(tokenId);
+		String tokenShaHex = Sha512DigestUtils.shaHex(token.getTokenId());
+		token.setTokenId(tokenShaHex);
+		repository.save(token);
+
+		return tokenId;
 	}
 
-	private SecureRandom getRandom() {
-		SecureRandom random;
-		try {
-			random = SecureRandom.getInstance("SHA1PRNG", "SUN");
-		} catch (NoSuchAlgorithmException | NoSuchProviderException e) {
-			random = new SecureRandom();
-		}
-		random.nextBytes(new byte[256]);
 
-		return random;
-	}
 
 }
