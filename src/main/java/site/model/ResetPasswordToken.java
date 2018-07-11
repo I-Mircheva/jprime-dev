@@ -19,6 +19,22 @@ public class ResetPasswordToken extends AbstractToken {
 	public ResetPasswordToken() {
 		super();
 	}
+	
+	public ResetPasswordToken(User user, String tokenId) {
+		super(user, tokenId);
+	}
+	
+	public void setUsed(boolean used) {
+		this.used = used;
+	}
+	
+	public boolean getUsed() {
+		return used;
+	}
+	
+	public boolean isUsed() {
+		return used;
+	}
 
 	public ResetPasswordToken(User owner, String tokenId) {
 		super(owner, tokenId);
