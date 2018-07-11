@@ -15,7 +15,7 @@ public class ResetPasswordToken extends AbstractToken {
 	}
 
 	public ResetPasswordToken(User owner, String tokenId) {
-		super();
+		super(owner, tokenId);
 	}
 
 	@Override

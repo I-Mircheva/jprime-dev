@@ -14,7 +14,7 @@ public class GDPRToken extends AbstractToken {
     }
 
     public GDPRToken(User owner, String tokenId) {
-        super();
+        super(owner, tokenId);
     }
 
     private boolean accepted = false;
