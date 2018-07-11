@@ -9,13 +9,15 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
+import org.springframework.security.core.token.Sha512DigestUtils;
+
 
 /**
  * @author Zhorzh Raychev
  */
 @Entity
 @Table(name = "ResetPasswordToken")
-public class ResetPasswordToken extends AbstractEntity {
+public class ResetPasswordToken extends AbstractToken {
 
 	private static final long serialVersionUID = -3626660176280247512L;
 	
@@ -37,31 +39,8 @@ public class ResetPasswordToken extends AbstractEntity {
 		this.owner = owner;
 		this.tokenId = tokenId;
 	}
-
-	public User getOwner() {
-		return owner;
-	}
-
-	public void setOwner(User owner) {
-		this.owner = owner;
-	}
-
-	public String getTokenId() {
-		return tokenId;
-	}
-
-	public void setTokenId(String tokenId) {
-		this.tokenId = tokenId;
-	}
 	
-	public boolean isUsed() {
-		return used;
-	}
-
-	public void setUsed(boolean used) {
-		this.used = used;
-	}
-
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -95,6 +74,8 @@ public class ResetPasswordToken extends AbstractEntity {
 			return false;
 		return true;
 	}
+
+
 
 	@Override
 	public String toString() {
