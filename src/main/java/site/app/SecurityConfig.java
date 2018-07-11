@@ -83,6 +83,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(final HttpSecurity http) throws Exception {
+        http.headers().frameOptions().disable(); // TODO SHOULD BE AUTOWIRED
         http
                 .csrf().disable()
                 .authorizeRequests()
