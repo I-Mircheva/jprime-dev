@@ -9,6 +9,14 @@ import java.util.Objects;
 @Table(name = "GDPRToken")
 public class GDPRToken extends AbstractToken {
 
+    public GDPRToken() {
+        super();
+    }
+
+    public GDPRToken(User owner, String tokenId) {
+        super();
+    }
+
     private boolean accepted = false;
 
     public boolean isAccepted() {
