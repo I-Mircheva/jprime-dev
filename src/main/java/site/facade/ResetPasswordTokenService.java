@@ -1,7 +1,5 @@
 package site.facade;
 
-import java.util.List;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.joda.time.DateTime;
@@ -9,12 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.token.Sha512DigestUtils;
 import org.springframework.stereotype.Service;
-
 import site.model.AbstractToken;
 import site.model.ResetPasswordToken;
 import site.model.User;
-import site.repository.AbstractTokenRepository;
 import site.repository.ResetPasswordTokenRepository;
+
+import java.util.List;
 
 /**
  * @author Zhorzh Raychev

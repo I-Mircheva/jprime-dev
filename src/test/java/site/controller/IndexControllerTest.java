@@ -15,12 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
 import site.app.Application;
 import site.model.*;
-import site.repository.ArticleRepository;
-import site.repository.PartnerRepository;
-import site.repository.SpeakerRepository;
-import site.repository.SponsorRepository;
-import site.repository.SubmissionRepository;
-import site.repository.TagRepository;
+import site.repository.*;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -31,9 +26,7 @@ import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.collection.IsIterableContainingInOrder.contains;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 /**
  * @author Ivan St. Ivanov

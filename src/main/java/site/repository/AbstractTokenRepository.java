@@ -1,11 +1,10 @@
 package site.repository;
 
-import java.util.List;
-
 import org.springframework.data.repository.PagingAndSortingRepository;
-
 import site.model.AbstractToken;
 import site.model.User;
+
+import java.util.List;
 
 public interface AbstractTokenRepository<T extends AbstractToken> extends PagingAndSortingRepository <T, Long> {
 	

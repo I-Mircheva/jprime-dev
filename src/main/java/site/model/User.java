@@ -1,18 +1,10 @@
 package site.model;
 
+import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import java.util.Collection;
 import java.util.HashSet;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
-import javax.persistence.Transient;
-import javax.validation.constraints.NotBlank;
-
-import javax.validation.constraints.Email;
-import org.hibernate.validator.constraints.Length;
-import javax.validation.constraints.NotEmpty;
 
 @Entity
 public class User extends AbstractEntity {

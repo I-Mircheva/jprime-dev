@@ -15,12 +15,7 @@ import org.springframework.web.context.WebApplicationContext;
 import site.app.Application;
 import site.config.Globals;
 import site.facade.CSVService;
-import site.model.Branch;
-import site.model.SessionLevel;
-import site.model.SessionType;
-import site.model.Speaker;
-import site.model.Submission;
-import site.model.SubmissionStatus;
+import site.model.*;
 import site.repository.SubmissionRepository;
 
 import java.io.File;
@@ -29,10 +24,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.core.Is.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static site.controller.SubmissionController.ADMIN_SUBMISSION_EDIT_JSP;
 import static site.controller.SubmissionController.ADMIN_SUBMISSION_VIEW_JSP;
 

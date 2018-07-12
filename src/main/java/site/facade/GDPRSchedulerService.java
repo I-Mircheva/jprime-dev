@@ -1,14 +1,10 @@
 package site.facade;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
-
-import javax.mail.MessagingException;
-
-import org.hibernate.validator.internal.constraintvalidators.bv.EmailValidator;
 import org.springframework.stereotype.Service;
 
-import site.model.User;
+import javax.mail.MessagingException;
+import java.io.IOException;
+import java.net.URISyntaxException;
 
 @Service
 public class GDPRSchedulerService {
