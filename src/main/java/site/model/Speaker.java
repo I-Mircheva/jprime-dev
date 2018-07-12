@@ -1,8 +1,18 @@
 package site.model;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.Lob;
+import javax.persistence.OneToMany;
+
 import site.config.Globals;
 
-import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 

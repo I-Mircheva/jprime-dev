@@ -5,11 +5,20 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
 import site.config.Globals;
 import site.model.*;
-import site.repository.*;
+import site.repository.ArticleRepository;
+import site.repository.PartnerRepository;
+import site.repository.SessionRepository;
+import site.repository.SpeakerRepository;
+import site.repository.SponsorRepository;
+import site.repository.SubmissionRepository;
+import site.repository.TagRepository;
+import site.repository.UserRepository;
 
 import javax.transaction.Transactional;
+
 import java.util.List;
 import java.util.Map;
 

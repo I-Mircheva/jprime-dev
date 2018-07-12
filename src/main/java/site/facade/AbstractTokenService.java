@@ -1,13 +1,17 @@
 package site.facade;
 
-import org.springframework.security.core.token.Sha512DigestUtils;
-import site.model.AbstractToken;
-import site.model.User;
-import site.repository.AbstractTokenRepository;
-
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.SecureRandom;
+
+import org.springframework.security.core.token.Sha512DigestUtils;
+
+import site.model.AbstractToken;
+import site.model.GDPRToken;
+import site.model.ResetPasswordToken;
+import site.model.User;
+import site.repository.AbstractTokenRepository;
+import site.repository.TokenRepository;
 
 public abstract class AbstractTokenService {
 	

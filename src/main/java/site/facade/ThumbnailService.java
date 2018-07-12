@@ -1,5 +1,15 @@
 package site.facade;
 
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+import javax.imageio.ImageIO;
+
+import net.coobird.thumbnailator.Thumbnails;
+
 import org.springframework.stereotype.Service;
 
 @Service(ThumbnailService.NAME)

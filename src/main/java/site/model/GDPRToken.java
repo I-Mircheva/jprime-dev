@@ -2,6 +2,7 @@ package site.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import java.util.Objects;
 
 
 @Entity

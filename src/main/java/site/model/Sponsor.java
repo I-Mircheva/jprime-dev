@@ -1,6 +1,12 @@
 package site.model;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.Lob;
+import java.util.Objects;
 
 @Entity
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)

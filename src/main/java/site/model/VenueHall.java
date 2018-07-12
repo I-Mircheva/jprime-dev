@@ -1,8 +1,9 @@
 package site.model;
 
+import java.util.Arrays;
+
 import javax.persistence.Entity;
 import javax.persistence.Lob;
-import java.util.Arrays;
 
 @Entity
 public class VenueHall extends AbstractEntity {

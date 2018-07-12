@@ -1,7 +1,11 @@
 package site.repository;
 
+import java.util.List;
+
 import org.springframework.stereotype.Repository;
+
 import site.model.ResetPasswordToken;
+import site.model.User;
 
 /**
  * @author Zhorzh Raychev
