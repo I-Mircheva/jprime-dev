@@ -22,9 +22,9 @@ import site.repository.ResetPasswordTokenRepository;
 @Service()
 public class ResetPasswordTokenService extends AbstractTokenService{
 
-	@Autowired
 	public ResetPasswordTokenService(ResetPasswordTokenRepository repository) {
 		super(repository);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Value("${site.reset.password.token.duration.hours:2}")
@@ -80,7 +80,6 @@ public class ResetPasswordTokenService extends AbstractTokenService{
 		repository.saveAll(tokens);
 	}
 	
-	@Override
 	protected AbstractToken createEmptyToken() {
 		return new ResetPasswordToken();
 	}

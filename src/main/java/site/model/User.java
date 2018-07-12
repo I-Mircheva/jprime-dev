@@ -19,6 +19,19 @@ public class User extends AbstractEntity {
 	/**
      * Default serial version uid.
      */
+	
+	public User(String firstName, String lastName, String email, String password, String phone) {
+		this.setFirstName(firstName);
+		this.setLastName(lastName);
+		this.setEmail(email);
+		this.setPassword(password);
+		this.setCpassword(password);
+		this.setPhone(phone);
+	}
+	
+	public User() {
+		
+	}
     private static final long serialVersionUID = 1L;
 	
 	private String firstName;

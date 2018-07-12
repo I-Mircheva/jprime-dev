@@ -11,7 +11,6 @@ import site.model.GDPRToken;
 import site.model.ResetPasswordToken;
 import site.model.User;
 import site.repository.AbstractTokenRepository;
-import site.repository.TokenRepository;
 
 public abstract class AbstractTokenService {
 	
