@@ -8,10 +8,6 @@ import java.util.List;
 
 @Repository(value = GDPRTokenRepository.NAME)
 
-public interface GDPRTokenRepository extends AbstractTokenRepository<GDPRToken, Long> {
+public interface GDPRTokenRepository extends AbstractTokenRepository<GDPRToken> {
     String NAME = "GDPRTokenRepository";
-
-    GDPRToken findByTokenId(String tokenId);
-
-    List<GDPRToken> findAllByOwner(User owner);
 }

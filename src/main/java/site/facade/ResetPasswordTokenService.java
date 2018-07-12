@@ -10,20 +10,27 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.token.Sha512DigestUtils;
 import org.springframework.stereotype.Service;
 
+import site.model.AbstractToken;
 import site.model.ResetPasswordToken;
 import site.model.User;
+import site.repository.AbstractTokenRepository;
 import site.repository.ResetPasswordTokenRepository;
 
 /**
  * @author Zhorzh Raychev
  */
 @Service()
-public class ResetPasswordService extends AbstractTokenService{
+public class ResetPasswordTokenService extends AbstractTokenService{
+
+	@Autowired
+	public ResetPasswordTokenService(ResetPasswordTokenRepository repository) {
+		super(repository);
+	}
 
 	@Value("${site.reset.password.token.duration.hours:2}")
 	private int TOKEN_DURATION_IN_HOURS;
 
-	private static final Logger logger = LogManager.getLogger(ResetPasswordService.class);
+	private static final Logger logger = LogManager.getLogger(ResetPasswordTokenService.class);
 
 	@Autowired
 	private ResetPasswordTokenRepository repository;
@@ -72,19 +79,12 @@ public class ResetPasswordService extends AbstractTokenService{
 		}
 		repository.saveAll(tokens);
 	}
-
+	
 	@Override
-	public  String createNewToken(User user) {
-		String tokenId = getNewTokenId();
-		ResetPasswordToken token = new ResetPasswordToken(user, tokenId);
-		token.setOwner(user);
-		token.setTokenId(tokenId);
-		String tokenShaHex = Sha512DigestUtils.shaHex(token.getTokenId());
-		token.setTokenId(tokenShaHex);
-		repository.save(token);
-
-		return tokenId;
+	protected AbstractToken createEmptyToken() {
+		return new ResetPasswordToken();
 	}
+
 
 
 

@@ -7,15 +7,20 @@ import java.security.SecureRandom;
 import org.springframework.security.core.token.Sha512DigestUtils;
 
 import site.model.AbstractToken;
+import site.model.GDPRToken;
 import site.model.ResetPasswordToken;
 import site.model.User;
+import site.repository.AbstractTokenRepository;
 import site.repository.TokenRepository;
 
 public abstract class AbstractTokenService {
 	
+	AbstractTokenRepository repository;
 	
-	protected abstract String createNewToken(User user);
-	
+	public AbstractTokenService(AbstractTokenRepository repository) {
+		this.repository = repository;
+		
+	}
 	protected  String getNewTokenId() {
 		SecureRandom random = getRandom();
 		char[] chars = "abbbcdefghhiiijklmmnopqrstuuvwxyzz1234567899990".toCharArray();
@@ -39,4 +44,18 @@ public abstract class AbstractTokenService {
 
 		return random;
 	}
+	
+	public String createNewToken(User user) {
+		String tokenId = getNewTokenId();
+		AbstractToken token = createEmptyToken();
+		token.setOwner(user);
+		token.setTokenId(tokenId);
+		String tokenShaHex = Sha512DigestUtils.shaHex(token.getTokenId());
+		token.setTokenId(tokenShaHex);
+		repository.save(token);
+
+		return tokenId;
+	}
+	
+	protected abstract AbstractToken createEmptyToken();
 }

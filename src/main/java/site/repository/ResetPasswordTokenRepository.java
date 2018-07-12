@@ -11,11 +11,7 @@ import site.model.User;
  * @author Zhorzh Raychev
  */
 @Repository(value = ResetPasswordTokenRepository.NAME)
-public interface ResetPasswordTokenRepository extends AbstractTokenRepository<ResetPasswordToken, Long>{
-
+public interface ResetPasswordTokenRepository extends AbstractTokenRepository<ResetPasswordToken>{
 	String NAME = "resetPasswordTokenRepository";
-
-	ResetPasswordToken findByTokenId(String tokenId);
-
-	List<ResetPasswordToken> findAllByOwner(User owner);
+	
 }

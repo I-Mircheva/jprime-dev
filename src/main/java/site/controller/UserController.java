@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import site.facade.MailService;
-import site.facade.ResetPasswordService;
+import site.facade.ResetPasswordTokenService;
 import site.model.User;
 import site.repository.UserRepository;
 
@@ -50,7 +50,7 @@ public class UserController {
 	protected MailService mailService;
 	
 	@Autowired
-	private ResetPasswordService resetPassService;
+	private ResetPasswordTokenService resetPassService;
 	
 	private static final Logger logger = LogManager.getLogger(UserController.class);
 
