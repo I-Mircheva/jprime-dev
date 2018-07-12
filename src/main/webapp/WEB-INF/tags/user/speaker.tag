@@ -46,10 +46,10 @@
 </dl>
 <dl>
 	<dt>
-		<label for="${role}.videos">Video</label>
+		<label for="${role}.videos">Videos</label>
 	</dt>
 	<dd>
-		<form:textarea path="${role}.videos" style="width:80%" rows="3" />
+		<form:textarea path="${role}.videos" style="width:80%" rows="5" />
 	</dd>
 </dl>
 <dl>
